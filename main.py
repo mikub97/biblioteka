@@ -1,7 +1,24 @@
-def print_hi(name):
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+import read_files as read
+print("main")
+print(read.read(file_name="people_file"))
 
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

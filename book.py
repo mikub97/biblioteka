@@ -1,9 +1,5 @@
 class Book():
-    name = ""
-    author = ""
-    date_of_publishing = ""
-    publisher = ""
-
+    #KONSTRUKTOR - TWORZY OBIEKTY
     def __init__(self, nazwa, autor, data, wydawca):
         self.name = nazwa
         self.author = autor

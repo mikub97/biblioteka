@@ -4,7 +4,7 @@ def read(file_name):
     lista=l1.split("\n")
     osoby=[]
     for osoba in lista:
-        osoby.append(osoba.split(" "))
+        osoby.append(osoba.split(";"))
     file.close()
     return(osoby)
 

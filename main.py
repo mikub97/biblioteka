@@ -25,9 +25,6 @@ wiedzmin = books[2]
 daniel = people[3]
 michal = people[0]
 daniel.rent_book(kubus)
-daniel.rent_book(wiedzmin)
-print(daniel.list_of_books)
+michal.rent_book(kubus)
 daniel.give_back_all_books()
-
-
-print("koniec")
+michal.rent_book(kubus)

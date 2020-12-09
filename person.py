@@ -13,12 +13,15 @@ class Person():
 
 
     def rent_book(self,book):
-        self.list_of_books.append(book)
-        print(f"{book.name} została wypożyczona przez {self.name}")
+        if (book.is_rented):
+            print("Nie można wypożyczyć "+ book.name)
+        else:
+            self.list_of_books.append(book)
+            book.rent()
+            print(f"{book.name} została wypożyczona przez {self.name}")
 
     def give_back_all_books(self):
         for b in self.list_of_books:
+            b.give_back()
             print(f"{b.name} została oddana przez {self.name}")
         self.list_of_books = []
-
-
